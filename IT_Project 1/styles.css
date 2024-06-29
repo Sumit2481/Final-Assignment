@@ -1,0 +1,399 @@
+/* Resetting default styles and setting up the main layout */
+body {
+    font-family: Arial, sans-serif; /* Setting the font family */
+    margin: 0;
+    padding: 0;
+}
+
+/* Styling for the header section */
+header {
+    display: flex;
+    justify-content: space-between; /* Ensuring space between items */
+    align-items: center; /* Centering items vertically */
+    padding: 10px 20px; /* Padding around the header */
+    background-color: #fff; /* White background */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle effect */
+}
+
+/* Logo styling */
+.logo {
+    font-size: 24px; /* Larger font size for the logo */
+    font-weight: bold; /* Bold font weight */
+}
+
+/* Navigation menu */
+nav ul {
+    list-style: none; /* Removing default list styles */
+    display: flex; /* Displaying items in a row */
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px; /* Adjusting space between menu items */
+}
+
+nav ul li a {
+    text-decoration: none; /* Removing underline from links */
+    color: #000; /* Black color for links */
+    font-size: 16px; /* Font size for menu items */
+}
+
+/* Profile section */
+.profile {
+    display: flex; /* Displaying profile info in a row */
+    align-items: center; /* Centering items vertically */
+}
+
+.profile img {
+    border-radius: 50%; /* Round profile image */
+    width: 40px; /* Setting width of the image */
+    height: 40px; /* Setting height of the image */
+    margin-right: 10px; /* Adding space between image and text */
+}
+
+/* Main content area */
+main {
+    display: flex; /* Displaying content in a row */
+    justify-content: center; /* Centering content horizontally */
+    align-items: center; /* Centering content vertically */
+    height: calc(100vh - 60px); /* Calculating height of the main area */
+    background-color: #f8f8f8; /* Light gray background */
+}
+
+/* Hero section */
+.hero {
+    display: flex; /* Displaying hero content in a row */
+    align-items: center; /* Centering items vertically */
+}
+
+.hero-text {
+    max-width: 500px; /* Setting maximum width of hero text */
+}
+
+.hero-text h1 {
+    color: green; /* Green color for hero text */
+    font-size: 24px; /* Font size for hero text */
+    margin-bottom: 10px; /* Adding space below hero text */
+}
+
+.hero-text h2 {
+    font-size: 36px; /* Larger font size for secondary hero text */
+    margin-bottom: 20px; /* Adding space below secondary hero text */
+}
+
+/* Shop now button */
+.shop-now {
+    display: inline-block; /* Displaying button as inline block */
+    padding: 10px 20px; /* Padding around the button text */
+    background-color: green; /* Green background color for button */
+    color: #fff; /* White text color */
+    text-decoration: none; /* Removing underline from button */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Hero image */
+.hero-image img {
+    width: 300px; /* Setting width of hero image */
+    height: auto; /* Auto height to maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners */
+    margin-left: 50px; /* Adding space to the left of the image */
+}
+
+/* Categories section */
+.categories {
+    text-align: center; /* Centering text within the categories section */
+    padding: 40px 20px; /* Padding around the categories section */
+}
+
+.categories h1 {
+    font-size: 36px; /* Font size for section heading */
+    margin-bottom: 40px; /* Adding space below section heading */
+}
+
+/* Category list */
+.category-list {
+    display: flex; /* Displaying categories in a row */
+    justify-content: center; /* Centering categories horizontally */
+    flex-wrap: wrap; /* Allowing categories to wrap to next line */
+    gap: 20px; /* Gap between category items */
+}
+
+.category-item {
+    width: 200px; /* Setting width of each category item */
+    text-align: center; /* Centering text within each category item */
+}
+
+.category-item img {
+    width: 100%; /* Ensuring images fill their containers */
+    height: 120px; /* Setting height of category images */
+    border-radius: 10px; /* Rounded corners for images */
+}
+
+.category-item h2 {
+    display: inline-block; /* Displaying category title as inline block */
+    margin-top: 10px; /* Adding space above category title */
+    padding: 10px 20px; /* Padding around category title */
+    background-color: #4caf50; /* Green background color for category title */
+    color: #fff; /* White text color */
+    text-decoration: none; /* Removing underline from category title */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Active state for navigation menu */
+nav ul li a.active {
+    color: green; /* Green color for active link */
+    font-weight: bold; /* Bold font weight for active link */
+}
+
+/* Products section */
+.products {
+    padding: 50px; /* Padding around the products section */
+    background-color: #f9f9f9; /* Light gray background */
+}
+
+.products h1 {
+    text-align: center; /* Centering text within the products section */
+    font-size: 36px; /* Font size for section heading */
+    margin-bottom: 50px; /* Adding space below section heading */
+    color: #333; /* Dark gray color for text */
+}
+
+/* Product list */
+.product-list {
+    display: flex; /* Displaying products in a row */
+    flex-wrap: wrap; /* Allowing products to wrap to next line */
+    gap: 20px; /* Gap between product items */
+    justify-content: center; /* Centering products horizontally */
+}
+
+.product-item {
+    flex: 1 1 200px; /* Allowing product items to grow */
+    max-width: 300px; /* Setting maximum width of product items */
+    text-align: center; /* Centering text within product items */
+    background-color: #fff; /* White background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle effect */
+    padding: 20px; /* Padding around product items */
+    transition: transform 0.3s ease; /* Smooth transition effect */
+}
+
+.product-item:hover {
+    transform: scale(1.05); /* Scaling up product item on hover */
+}
+
+.product-item img {
+    max-width: 100%; /* Ensuring images fill their containers */
+    border-radius: 10px; /* Rounded corners for images */
+}
+
+.product-item h2 {
+    margin-top: 15px; /* Adding space above product title */
+    font-size: 24px; /* Font size for product title */
+    color: #333; /* Dark gray color for text */
+}
+
+.product-item .price {
+    font-size: 20px; /* Font size for product price */
+    color: #4caf50; /* Green color for price */
+    margin: 10px 0; /* Adding space around price */
+}
+
+/* Buttons in product items */
+.product-item .add-to-cart,
+.product-item .buy-now {
+    display: inline-block; /* Displaying buttons as inline block */
+    margin-top: 10px; /* Adding space above buttons */
+    padding: 10px 20px; /* Padding around buttons */
+    background-color: #4caf50; /* Green background color for buttons */
+    color: #fff; /* White text color */
+    text-decoration: none; /* Removing underline from buttons */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* About section */
+.about {
+    padding: 50px; /* Padding around the about section */
+    background-color: #f9f9f9; /* Light gray background */
+}
+
+.about h1 {
+    text-align: center; /* Centering text within the about section */
+    font-size: 36px; /* Font size for section heading */
+    margin-bottom: 50px; /* Adding space below section heading */
+    color: #333; /* Dark gray color for text */
+}
+
+/* About content */
+.about-content {
+    display: flex; /* Displaying about content in a row */
+    align-items: center; /* Centering items vertically */
+    gap: 50px; /* Gap between items */
+}
+
+.about-content img {
+    max-width: 300px; /* Setting maximum width of about images */
+    border-radius: 15px; /* Rounded corners for images */
+    flex: 1; /* Allowing images to grow */
+}
+
+.about-text {
+    flex: 2; /* Allowing text content to grow */
+}
+
+.about-text h2 {
+    font-size: 28px; /* Font size for subheading */
+    margin-bottom: 20px; /* Adding space below subheading */
+    color: #333; /* Dark gray color for text */
+}
+
+.about-text p {
+    font-size: 18px; /* Font size for paragraph */
+    color: #555; /* Gray color for text */
+    line-height: 1.6; /* Line height for readability */
+}
+
+/* Customers section */
+.customers {
+    padding: 50px; /* Padding around the customers section */
+    background-color: #f9f9f9; /* Light gray background */
+}
+
+.customers h1 {
+    text-align: center; /* Centering text within the customers section */
+    font-size: 36px; /* Font size for section heading */
+    margin-bottom: 50px; /* Adding space below section heading */
+    color: #333; /* Dark gray color for text */
+}
+
+/* Customer list */
+.customer-list {
+    display: flex; /* Displaying customers in a row */
+    flex-wrap: wrap; /* Allowing customers to wrap to next line */
+    gap: 20px; /* Gap between customer items */
+    justify-content: center; /* Centering customers horizontally */
+}
+
+.customer-item {
+    flex: 1 1 200px; /* Allowing customer items to grow */
+    max-width: 300px; /* Setting maximum width of customer items */
+    text-align: center; /* Centering text within customer items */
+    background-color: #fff; /* White background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle effect */
+    padding: 20px; /* Padding around customer items */
+    transition: transform 0.3s ease; /* Smooth transition effect */
+}
+
+.customer-item:hover {
+    transform: scale(1.05); /* Scaling up customer item on hover */
+}
+
+.customer-item img {
+    max-width: 100%; /* Ensuring images fill their containers */
+    height: 250px; /* Setting height of customer images */
+    border-radius: 10px; /* Rounded corners for images */
+}
+
+.customer-item h2 {
+    margin-top: 15px; /* Adding space above customer title */
+    font-size: 24px; /* Font size for customer title */
+    color: #333; /* Dark gray color for text */
+}
+
+.customer-item p {
+    font-size: 18px; /* Font size for customer description */
+    color: #555; /* Gray color for text */
+    margin: 10px 0; /* Adding space around description */
+}
+
+/* Contact section */
+.contact {
+    padding: 50px; /* Padding around the contact section */
+    background-color: #f9f9f9; /* Light gray background */
+}
+
+.contact h1 {
+    text-align: center; /* Centering text within the contact section */
+    font-size: 36px; /* Font size for section heading */
+    margin-bottom: 50px; /* Adding space below section heading */
+    color: #333; /* Dark gray color for text */
+}
+
+.contact-content {
+    display: flex; /* Displaying contact content in a row */
+    gap: 50px; /* Gap between items */
+    justify-content: center; /* Centering content horizontally */
+    flex-wrap: wrap; /* Allowing content to wrap to next line */
+}
+
+/* Contact information */
+.contact-info {
+    flex: 1; /* Allowing contact info to grow */
+    max-width: 400px; /* Setting maximum width of contact info */
+}
+
+.contact-info h2 {
+    font-size: 28px; /* Font size for subheading */
+    margin-bottom: 20px; /* Adding space below subheading */
+    color: #333; /* Dark gray color for text */
+}
+
+.contact-info p {
+    font-size: 18px; /* Font size for paragraph */
+    color: #555; /* Gray color for text */
+    line-height: 1.6; /* Line height for readability */
+}
+
+.contact-info ul {
+    list-style: none; /* Removing default list styles */
+    padding: 0; /* Removing padding */
+}
+
+.contact-info ul li {
+    font-size: 18px; /* Font size for list items */
+    color: #555; /* Gray color for text */
+    margin: 10px 0; /* Adding space around list items */
+}
+
+/* Contact form */
+.contact-form {
+    flex: 1; /* Allowing contact form to grow */
+    max-width: 400px; /* Setting maximum width of contact form */
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px; /* Adding space below form groups */
+}
+
+.contact-form label {
+    display: block; /* Displaying labels as block elements */
+    font-size: 18px; /* Font size for labels */
+    margin-bottom: 10px; /* Adding space below labels */
+    color: #333; /* Dark gray color for text */
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%; /* Ensuring input fields fill their containers */
+    padding: 10px; /* Padding inside input fields */
+    font-size: 16px; /* Font size for input fields */
+    border: 1px solid #ccc; /* Border style for input fields */
+    border-radius: 5px; /* Rounded corners for input fields */
+}
+
+.contact-form button {
+    display: inline-block; /* Displaying button as inline block */
+    padding: 10px 20px; /* Padding around button text */
+    background-color: #4caf50; /* Green background color for button */
+    color: #fff; /* White text color */
+    text-decoration: none; /* Removing underline from button */
+    border: none; /* Removing border from button */
+    border-radius: 5px; /* Rounded corners for button */
+    font-size: 18px; /* Font size for button text */
+    cursor: pointer; /* Changing cursor to pointer on hover */
+}
+
+.contact-form button:hover {
+    background-color: #45a049; /* Darker green color on button hover */
+}
